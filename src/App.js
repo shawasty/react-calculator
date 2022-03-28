@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <div className="container">
+
+      <div className="calculator">
+
+          <input type="text" className="calc-numbers" value="0"/>
+
+          <div className="calculator-buttons">
+              <button className="btn is-clear span-2 orange operator">C</button>
+              <button className="btn orange operator">&larr;</button>
+              <button className="btn orange operator">&divide;</button>
+              <button className="btn">7</button>
+              <button className="btn">8</button>
+              <button className="btn">9</button>
+              <button className="btn orange operator">x</button>
+              <button className="btn">4</button>
+              <button className="btn">5</button>
+              <button className="btn">6</button>
+              <button className="btn orange">-</button>
+              <button className="btn">1</button>
+              <button className="btn">2</button>
+              <button className="btn">3</button>
+              <button className="btn orange operator">+</button>
+              <button className="btn span-3">0</button>
+              <button className="btn orange operator">=</button>
+              
+          </div>
+    
+      </div>
+
     </div>
   );
 }
