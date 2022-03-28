@@ -23,7 +23,7 @@
 }
 .calc-numbers{
     font-family: 'Space Mono', serif;
-    background: black;
+    background: rgb(82, 80, 80);
     color: white;
     font-size: 2em;
     border:0;
@@ -47,6 +47,6 @@
     background: #fff;
 }
 .orange{
-    background-color:orange;
+    background-color:rgb(97, 193, 206);
 }
 
