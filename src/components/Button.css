@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+.button-wrapper{
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: rgb(93, 97, 93);
+    color: white;
+    flex: 1;
+
+    margin: 4px;
+    border-radius: 25px;
+}

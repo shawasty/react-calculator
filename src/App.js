@@ -1,37 +1,42 @@
 
 import './App.css';
-
+import Button from './components/Button';
+import Input from './components/Input';
 function App() {
+
+  const buttonColor = '#0394fc'
   return (
    
-    <div className="container">
-
-      <div className="calculator">
-
-          <input type="text" className="calc-numbers" value="0"/>
-
-          <div className="calculator-buttons">
-              <button className="btn is-clear span-2 orange operator">C</button>
-              <button className="btn orange operator">&larr;</button>
-              <button className="btn orange operator">&divide;</button>
-              <button className="btn">7</button>
-              <button className="btn">8</button>
-              <button className="btn">9</button>
-              <button className="btn orange operator">x</button>
-              <button className="btn">4</button>
-              <button className="btn">5</button>
-              <button className="btn">6</button>
-              <button className="btn orange">-</button>
-              <button className="btn">1</button>
-              <button className="btn">2</button>
-              <button className="btn">3</button>
-              <button className="btn orange operator">+</button>
-              <button className="btn span-3">0</button>
-              <button className="btn orange operator">=</button>
-              
-          </div>
-    
+    <div className="App">
+      <div className="calc-wrapper">
+        <Input/>
+        <div className="row">
+        <Button symbol ="7"/>
+        <Button symbol ="8"/>
+        <Button symbol ="9"/>
+      <Button symbol ="/" color={buttonColor}/>
+        </div>
+        <div className="row">
+        <Button symbol ="4"/>
+        <Button symbol ="5"/>
+        <Button symbol ="6"/>
+        <Button symbol ="*" color={buttonColor}/>
+        </div>
+        <div className="row">
+        <Button symbol ="1"/>
+        <Button symbol ="2"/>
+        <Button symbol ="3"/>
+        <Button symbol ="+" color={buttonColor}/>
+        </div>
+        <div className="row">
+        <Button symbol ="0"/>
+        <Button symbol ="."/>
+        <Button symbol ="="/>
+        <Button symbol ="-" color={buttonColor}/>
+        </div>
+        <Button symbol ="Clear" color='#d4203b'/>
       </div>
+
 
     </div>
   );
