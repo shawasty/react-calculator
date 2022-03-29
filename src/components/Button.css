@@ -9,7 +9,7 @@
     background-color: rgb(93, 97, 93);
     color: white;
     flex: 1;
-
+    cursor: pointer;
     margin: 4px;
     border-radius: 25px;
 }
